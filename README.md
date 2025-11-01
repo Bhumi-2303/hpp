@@ -14,8 +14,8 @@ This web app allows users to input real housing details (like rooms, population,
 
 ## 👥 Team Members
 
-* **Bhavini Chauhan** – Model Training, Streamlit Interface, UI Design
-* **Anuj Pradhan** – Data Preprocessing, Model Optimization, Deployment Setup
+* **Bhavini Chauhan** – Deployment Setup, Streamlit Interface, UI Design
+* **Anuj Pradhan** – Data Preprocessing, Model Optimization, Model Training
 
 🎓 *3rd Year Design Engineering Students (B.E.)*
 🧩 *RNGPIT, Bardoli – Gujarat Technological University*
