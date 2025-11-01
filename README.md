@@ -36,7 +36,7 @@ This web app allows users to input real housing details (like rooms, population,
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/housing-price-predictor.git
+git clone https://github.com/<Bhumi-2303>/housing-price-predictor.git
 cd housing-price-predictor
 ```
 
