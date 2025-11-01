@@ -1,0 +1,41 @@
+# Python cache & environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.joblib
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE & project settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Data files
+*.csv
+*.xlsx
+*.xls
+*.db
+
+# Model & artifacts (keep only if needed)
+model/*.h5
+model/*.pkl
+!model/scaler.pkl
+!model/model.pkl
+
+# Logs & temp
+*.log
+*.tmp
+*.bak
+
+# Streamlit
+.streamlit/
