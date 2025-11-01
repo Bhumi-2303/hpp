@@ -1,9 +1,3 @@
-Yes, that screenshot looks great for the README! It clearly shows the interface and aligns perfectly with a professional presentation. I'll now include both your and Anuj Pradhan's names, mention that you're 3rd-year Design Engineering students, and integrate the screenshot section nicely.
-
-Here's the **updated README**:
-
----
-
 # 🏡 California Housing Price Prediction App
 
 This project predicts the **Median House Value** (🏠 price) for regions in California based on real-world housing and location factors. It uses a **Random Forest Regression Model** trained on the California Housing Dataset.
@@ -14,9 +8,7 @@ This project predicts the **Median House Value** (🏠 price) for regions in Cal
 
 This web app allows users to input real housing details (like rooms, population, income, etc.) and instantly get an estimated house price. The model is deployed with **Streamlit** for a clean, interactive interface.
 
-![App Preview](assets/app_preview.png)
-
-*(Replace the image path above with your uploaded screenshot filename — e.g., `/images/ui_screenshot.png`)*
+![App Preview](image.png)
 
 ---
 
@@ -95,9 +87,7 @@ streamlit run app.py
 
 ## 📸 Screenshot
 
-![California Housing App](assets/app_ui.png)
-
-![California Hosuing App]](image.png)
+![California Housing App](image.png)
 
 ---
 
