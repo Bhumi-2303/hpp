@@ -3,7 +3,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import joblib
+import pickle
 import os
 
 # ---------------------- PAGE CONFIG ----------------------
@@ -16,14 +16,21 @@ st.set_page_config(
 # ---------------------- LOAD MODEL ----------------------
 @st.cache_resource
 def load_artifacts():
-    model = joblib.load("model/model.pkl")
-    scaler = joblib.load("model/scaler.pkl")
-    return model, scaler
+    """Safely load the trained model and scaler using pickle."""
+    try:
+        with open(os.path.join("model", "model.pkl"), "rb") as f:
+            model = pickle.load(f)
+        with open(os.path.join("model", "scaler.pkl"), "rb") as f:
+            scaler = pickle.load(f)
+        return model, scaler
+    except FileNotFoundError:
+        st.error("❌ Model or Scaler not found! Please ensure 'model/model.pkl' and 'model/scaler.pkl' exist.")
+        st.stop()
+    except Exception as e:
+        st.error(f"⚠️ Failed to load model files: {e}")
+        st.stop()
 
-if not os.path.exists("model/model.pkl") or not os.path.exists("model/scaler.pkl"):
-    st.error("❌ Model or Scaler not found! Please run `train_model.py` first.")
-    st.stop()
-
+# Load model + scaler
 model, scaler = load_artifacts()
 
 # ---------------------- HEADER SECTION ----------------------
