@@ -26,12 +26,6 @@ Thumbs.db
 *.xls
 *.db
 
-# Model & artifacts (keep only if needed)
-model/*.h5
-model/*.pkl
-!model/scaler.pkl
-!model/model.pkl
-
 # Logs & temp
 *.log
 *.tmp
